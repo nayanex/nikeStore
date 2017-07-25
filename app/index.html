@@ -96,9 +96,8 @@
                                 <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
                             </span> 
                             <p class="product-title">{{resp.title}}</p>
-                            
-                             <span class="label label-danger">{{resp.category}}</span>
-                             <span class="badge">{{resp.price | currency}}</span></h2>
+                            <p>{{ resp["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</p>
+                            <span>{{resp.price | currency: 'R$ '}}</span></h2>
                             <p>{{resp.installments.number}}</p>
                             <p>Comment: {{resp.installments.value}}</p>
                         </div>
