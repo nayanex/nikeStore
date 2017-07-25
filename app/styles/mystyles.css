@@ -1,3 +1,20 @@
+.tops-option {
+    color: #A9A9A9;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.monthly-payments {
+    color: #989898;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.price {
+    color: gray;
+    font-weight: bold;
+}
+
 .personalize {
     font-weight: bold;
     color: gray;

@@ -95,10 +95,10 @@
                             <span class="media-heading personalize">
                                 <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
                             </span> 
-                            <p class="product-title">{{resp.title}}</p>
-                            <p>{{ resp["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</p>
-                            <p>{{resp.price | currency: 'R$ '}}</p>
-                            <p>ou {{resp.installments.number}} X {{resp.installments.value}} sem juros</p>
+                            <div class="product-title">{{resp.title}}</div>
+                            <div class="tops-option">{{ resp["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
+                            <div class="price">{{resp.price | currency: 'R$ '}}</div>
+                            <div class="monthly-payments">ou {{resp.installments.number}}X {{resp.installments.value | currency: ''}} sem juros</div>
                         </div>
                     </li>
                 </ul>
