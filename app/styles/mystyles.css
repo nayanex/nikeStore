@@ -1,0 +1,163 @@
+.personalize {
+    font-weight: bold;
+    color: gray;
+    border-bottom: 1px ridge;
+    padding-bottom: 4px;
+    display: block;
+}
+
+.product-title {
+    font-weight: bold;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.row-header {
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+}
+
+.row-top-form {
+    margin: 0px auto;
+    padding: 25px 0px 10px 0px;
+    border-bottom: 1px ridge;
+
+}
+
+.btn-dark {
+     background: rgb(48, 48, 48);
+     font-weight: bold;
+     font-size: 70%;
+     padding: 10px;
+     border-color: rgb(48, 48, 48);
+     color: rgb(234, 234, 234);
+     border-radius: 2px;
+     border-width: 0px;
+}
+
+.slogan-footer {
+    color: white;
+    font-size: 320%;
+    padding: 14% 0% 0% 0%;
+    font-weight: 800;
+}
+
+#img-bkg-footer {
+    margin: 0px 0px 0px 0px;
+    padding: 0% 0% 13.5% 0%;
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.row-footer {
+    margin: 0px 0px 0px 0px;
+    margin-right: -5.3%;
+    margin-left: -5.4%;
+    vertical-align: center;
+}
+
+.copyright-info {
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 80%;
+    color: #B8B8B8;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron {
+    margin: 0px 0px 0px 0px;
+    padding: 0% 0% 34.4% 0%;
+    background-image: url(../images/banner.png);
+    background-color: transparent;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-inverse {
+     background: white;
+     font-weight: bold;
+     font-size: 70%;
+     border-color: #ff5c2b;
+     color: black;
+     
+}
+
+.navbar-inverse .navbar-nav> li> a {
+    color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff !important;
+    background-color: #ff5c2b !important;
+}
+
+.navbar-inverse .navbar-nav> li> a:active {
+    color: #fff;
+    background: #333;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: black;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #ff5c2b;
+    background-color: #ff5c2b;
+}
+
+/*Caroussel*/
+
+.carousel {
+  background: #1a237e;
+}
+.carousel .item {
+  height: 300px;
+}
+.carousel .item img {
+  left: 0;
+  min-height: 300px;
+  position: absolute;
+  top: 0;
+}
+.tab-content {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 10px;
+}
+.affix {
+  top: 100px;
+}
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
