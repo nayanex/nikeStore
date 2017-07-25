@@ -97,9 +97,8 @@
                             </span> 
                             <p class="product-title">{{resp.title}}</p>
                             <p>{{ resp["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</p>
-                            <span>{{resp.price | currency: 'R$ '}}</span></h2>
-                            <p>{{resp.installments.number}}</p>
-                            <p>Comment: {{resp.installments.value}}</p>
+                            <p>{{resp.price | currency: 'R$ '}}</p>
+                            <p>ou {{resp.installments.number}} X {{resp.installments.value}} sem juros</p>
                         </div>
                     </li>
                 </ul>
@@ -124,7 +123,7 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bower_components/angular-i18n/angular-locale_pt-br.js"></script>
     <script src="scripts/app.js"></script>
 
     
