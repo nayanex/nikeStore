@@ -11,6 +11,7 @@
         <!-- Bootstrap -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet">
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="styles/bootstrap-social.css" rel="stylesheet">
     <link href="styles/mystyles.css" rel="stylesheet">
@@ -82,27 +83,41 @@
         </div>
 
         <div class="row row-content" ng-controller="carouselController as carouselCtrl">
-            <div class="col-xs-12">
-                <ul class="media-list">
-                    <li class="media" ng-repeat='resp in response["best-sellers"]'>
-                        <div class="media-middle">
-                            <a href="#">
-                            <img class="media-object"
-                             ng-src={{resp.image}} alt={{resp.title}}>
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <span class="media-heading personalize">
-                                <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
-                            </span> 
-                            <div class="product-title">{{resp.title}}</div>
-                            <div class="tops-option">{{ resp["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
-                            <div class="price">{{resp.price | currency: 'R$ '}}</div>
-                            <div class="monthly-payments">ou {{resp.installments.number}}X {{resp.installments.value | currency: ''}} sem juros</div>
-                        </div>
-                    </li>
-                </ul>
+
+
+            <div style="height: 305px">
+                <carousel interval="myInterval">
+                    <slide ng-repeat='slide in slides["best-sellers"]' active="slide.active">
+                        <div class="" style="width:600px;margin:auto;">
+
+                        <span class="item-carousel " width="200px" style="float:left;" >
+                            <span class="media" >
+                                <div class="media-middle">
+                                    <a href="#">
+                                    <img class="media-object"
+                                     ng-src={{slide.image}} alt={{slide.title}}>
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading personalize">
+                                        <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
+                                    </span> 
+                                    <div class="product-title">{{slide.title}}</div>
+                                    <div class="tops-option">{{ slide["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
+                                    <div class="price">{{resp.price | currency: 'R$ '}}</div>
+                                    <div class="monthly-payments">
+                                        ou {{slide.installments.number}}X {{slide.installments.value | currency: ''}} sem juros
+                                    </div>
+                                </div>
+                            </span>
+                        </span>
+
+
+                    </div>
+                    </slide>
+                </carousel>
             </div>
+
         </div>
 
     </div>
@@ -121,8 +136,10 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/angular/angular.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <script src="../bower_components/angular-i18n/angular-locale_pt-br.js"></script>
     <script src="scripts/app.js"></script>
 

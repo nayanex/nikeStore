@@ -4,6 +4,11 @@
     font-weight: bold;
 }
 
+.item-carousel {
+    max-width: 20%
+
+}
+
 .monthly-payments {
     color: #989898;
     font-size: 12px;
