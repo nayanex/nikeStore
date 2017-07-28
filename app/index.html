@@ -83,41 +83,109 @@
         </div>
 
         <div class="row row-content" ng-controller="carouselController as carouselCtrl">
-
-
             <div style="height: 305px">
-                <carousel interval="myInterval">
-                    <slide ng-repeat='slide in slides["best-sellers"]' active="slide.active">
-                        <div class="" style="width:600px;margin:auto;">
-
-                        <span class="item-carousel " width="200px" style="float:left;" >
-                            <span class="media" >
-                                <div class="media-middle">
-                                    <a href="#">
-                                    <img class="media-object"
-                                     ng-src={{slide.image}} alt={{slide.title}}>
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <span class="media-heading personalize">
-                                        <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
-                                    </span> 
-                                    <div class="product-title">{{slide.title}}</div>
-                                    <div class="tops-option">{{ slide["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
-                                    <div class="price">{{resp.price | currency: 'R$ '}}</div>
-                                    <div class="monthly-payments">
-                                        ou {{slide.installments.number}}X {{slide.installments.value | currency: ''}} sem juros
+                <div style="height: 305px">
+                    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                        <div class="" style="width:800px;margin:auto;">
+                            <span class="item-carousel media-list" width="200px" style="float:left;" >
+                                <span class="media" >
+                                    <div class="media-middle">
+                                        <a href="#">
+                                        <img class="media-object"
+                                         ng-src={{slide["image1"]}} alt={{slide["title1"]}}>
+                                        </a>
                                     </div>
-                                </div>
+                                    <div class="media-body">
+                                        <span class="media-heading personalize">
+                                            <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
+                                        </span> 
+                                        <div class="product-title">{{slide.title1}}</div>
+                                        <div class="tops-option">{{ slide["high-top"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
+                                        <div class="price">{{slide["price1"] | currency: 'R$ '}}</div>
+                                        <div class="monthly-payments">
+                                            ou {{slide.installments1.number}}X {{slide.installments1.value | currency: ''}} sem juros
+                                        </div>
+                                    </div>
+                                </span>
                             </span>
-                        </span>
-
-
+                            <span class="item-carousel media-list" width="200px" style="float:left;" >
+                                <span class="media" >
+                                    <div class="media-middle">
+                                        <a href="#">
+                                        <img class="media-object"
+                                         ng-src={{slide["image2"]}} alt={{slide["title2"]}}>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="media-heading personalize">
+                                            <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
+                                        </span> 
+                                        <div class="product-title">{{slide.title2}}</div>
+                                        <div class="tops-option">{{ slide["high-top2"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
+                                        <div class="price">{{slide["price2"] | currency: 'R$ '}}</div>
+                                        <div class="monthly-payments">
+                                            ou {{slide.installments2.number}}X {{slide.installments2.value | currency: ''}} sem juros
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                            <span class="item-carousel media-list" width="200px" style="float:left;" >
+                                <span class="media" >
+                                    <div class="media-middle">
+                                        <a href="#">
+                                        <img class="media-object"
+                                         ng-src={{slide["image3"]}} alt={{slide["title3"]}}>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="media-heading personalize">
+                                            <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
+                                        </span> 
+                                        <div class="product-title">{{slide.title3}}</div>
+                                        <div class="tops-option">{{ slide["high-top3"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
+                                        <div class="price">{{slide["price3"] | currency: 'R$ '}}</div>
+                                        <div class="monthly-payments">
+                                            ou {{slide.installments3.number}}X {{slide.installments3.value | currency: ''}} sem juros
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                            <span class="item-carousel media-list" width="200px" style="float:left;" >
+                                <span class="media" >
+                                    <div class="media-middle">
+                                        <a href="#">
+                                        <img class="media-object"
+                                         ng-src={{slide["image4"]}} alt={{slide["title4"]}}>
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="media-heading personalize">
+                                            <img style="padding-right:5px;" src="images/personalize.jpg">PERSONALIZE
+                                        </span> 
+                                        <div class="product-title">{{slide.title4}}</div>
+                                        <div class="tops-option">{{ slide["high-top4"] ? 'Cano Alto' : 'Cano Baixo' }}</div>
+                                        <div class="price">{{slide["price4"] | currency: 'R$ '}}</div>
+                                        <div class="monthly-payments">
+                                            ou {{slide.installments4.number}}X {{slide.installments4.value | currency: ''}} sem juros
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                        </div>
                     </div>
-                    </slide>
-                </carousel>
+                </div>
             </div>
 
+   
+<!--
+            <div ng-repeat='slide in slides["best-sellers"]'>
+              <img ng-src="{{slide.image}}" style="margin:auto;">
+            </div>
+-->
+
+
+            </div>
         </div>
 
     </div>
@@ -138,6 +206,8 @@
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
     <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <script src="../bower_components/angular-i18n/angular-locale_pt-br.js"></script>

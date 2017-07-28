@@ -157,29 +157,3 @@ body {
 
 /*Caroussel*/
 
-.carousel {
-  background: #1a237e;
-}
-.carousel .item {
-  height: 300px;
-}
-.carousel .item img {
-  left: 0;
-  min-height: 300px;
-  position: absolute;
-  top: 0;
-}
-.tab-content {
-  border-bottom: 1px solid #dddddd;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  padding: 10px;
-}
-.affix {
-  top: 100px;
-}
-#carouselButtons {
-  bottom: 0px;
-  position: absolute;
-  right: 0px;
-}
