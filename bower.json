@@ -1,16 +1,18 @@
 {
-  "name": "nikeStore",
+  "name": "itauInsightsSolution",
   "version": "1.0.0",
-  "description": "Website for an awesome e-commerce",
+  "description": "Website for an awesome educational platform about personal investiments",
   "main": "index.html",
   "moduleType": [],
   "keywords": [
-    "nike",
-    "sports",
-    "store"
+    "investiments",
+    "gamification",
+    "fintech"
   ],
   "authors": [
-    "Nayana Abreu"
+    "Nayana Abreu",
+    "Filipe Samuel",
+    "Rafael Augusto"
   ],
   "license": "MIT",
   "homepage": "",
